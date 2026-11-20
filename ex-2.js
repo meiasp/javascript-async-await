@@ -12,4 +12,9 @@ let getJohnProfile = () => {
   });
 };
 
-// Start coding here
+const displayJohnProfile = (error) => {
+  console.log(error);
+};
+
+getJohnProfile()
+.catch(displayJohnProfile);
