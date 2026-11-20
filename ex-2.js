@@ -12,4 +12,12 @@ let getJohnProfile = () => {
   });
 };
 
-// Start coding here
+let displayJohnProfile = (data) => {
+  return console.log(data);
+}
+
+let displayError = (error) => {
+  return console.log(error);
+}
+
+getJohnProfile().then(displayJohnProfile).catch(displayError)
