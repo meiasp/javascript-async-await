@@ -32,4 +32,16 @@ let getJohnOrders = () => {
   });
 };
 
-// Start coding here
+const displayJohnProfile = (data) => {
+  console.log(data);
+};
+
+const displayJohnOrders = (data) => {
+  console.log(data);
+};
+
+getJohnProfile()
+.then(displayJohnProfile)
+.then(getJohnOrders)
+.then(displayJohnOrders);
+
